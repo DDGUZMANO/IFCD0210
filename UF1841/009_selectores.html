@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        nav li{
+            color: blue;
+            background-color: aqua;
+        }
+
+        .cabecera{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            color: blueviolet;
+        }
+        .cabecera h1{
+            color: tomato;
+            /* a pesar de que h1 esta asignado con un color en .cabecera, predomina el color asignado aqui porque este tiene mayo especificidad */
+        }
+
+        section p{
+            color:blueviolet;
+            background-color: blanchedalmond;
+            font-size: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1>Selectores CSS</h1>
+        <nav>
+            <ul>
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Fuera de la cabecera</h1>
+        <section>
+            En los territorios más remotos del Borde Exterior, un cazarrecompensas solitario viaja de planeta en planeta
+            siguiendo contratos que cambian con cada amanecer. Su armadura de metal bruñido refleja un pasado lleno de
+            batallas, mientras que su estricta conducta se rige por un antiguo credo que pocos aún comprenden.
+            Las ciudades fronterizas lo reciben con cautela, acostumbradas a forasteros que llegan buscando créditos
+            rápidos. <br> Sin embargo, todos saben que cuando un mandaloriano entra a una cantina, es mejor apartarse y no
+            hacer preguntas. Entre arenas tóxicas, estaciones oxidadas y mercados abarrotados, su presencia siempre
+            genera respeto… o temor.
+            <br><br><br>
+            <article>
+                En una galaxia gobernada por tensiones constantes, los sistemas más alejados luchan por mantener su
+                libertad mientras fuerzas oscuras intentan extender su dominio. Las rutas hiperespaciales se han vuelto
+                inestables, y muchos comerciantes independientes viajan con cautela, temiendo encontrarse con patrullas
+                imperiales o con piratas que aprovechan el caos.
+                <p>
+                    Hola caracola
+                </p>
+            </article>
+            <br><br><br>
+            <article>
+                Este es el article final
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul>
+                <li>Opción 4</li>
+                <li>Opción 5</li>
+                <li>Opción 6</li>
+            </ul>
+    </footer>
+</body>
+
+</html>
