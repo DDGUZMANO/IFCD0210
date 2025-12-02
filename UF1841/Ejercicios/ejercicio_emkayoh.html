@@ -27,12 +27,13 @@
         }
         
         .cabecero nav{
-            background-color: rosybrown;
+            background-color: rgb(214, 195, 195);
         }
 
         nav ul li{
             display: inline-block;
-            padding: 15px;            
+            padding: 15px;
+            padding-left: 34px;            
         }
 
         nav ul li a{
@@ -41,8 +42,14 @@
             font-size: 18px;
         }
         main{
-            background-color: blanchedalmond;
+            background-color: rgb(235, 234, 234);
+            line-height: 1.7;
         }
+
+        main li{
+            line-height: 2.5;
+        }
+        
         main div{
             width: 80%;
             margin: 0 auto;
@@ -70,6 +77,11 @@
         main ul{
             padding-left: 40px;
         }
+
+        .titulos{
+            line-height:2;
+        }
+        
     </style>
 </head>
 
@@ -112,7 +124,7 @@
             </article>
             <article>
                 <h2>Professional Experience</h2>
-                <p>
+                <p class="titulos">
                     <strong>Founder and Director <a href="">Mumav Ltd</a></strong> (2018 - Present)
 
                     <ul>
@@ -120,7 +132,7 @@
                         <li>Patent author <a href="">US Patent 11559200</a> - 2023</li>
                     </ul>
                 </p>
-                <p>
+                <p class="titulos">
                     <strong>
                         Founder and Director <a href="#">Emqueue Ltd</a>
                     </strong> (2024 - Present)
@@ -128,7 +140,7 @@
                         <li>Investigating the utility of LLM in summarising scientific literature</li>
                     </ul>
                 </p>
-                <p>
+                <p class="titulos">
                     <strong>
                         NIHR Research Associate University of Manchester
                     </strong> (2013 - 2016)
@@ -138,7 +150,7 @@
                         <li>Clinical trial No: NCT02090751 <a href="#">Development of a Device to Measure Dark Adaptation</a></li>
                     </ul>
                 </p>
-                <p>
+                <p class="titulos">
                     <strong>Research Optometrist, University of Manchester</strong> (2008 - Present) <br><br>
                     Developing algorithms for rod function analysis, colour vision theory, and instructing MSc & PhD students.
                 </p>
