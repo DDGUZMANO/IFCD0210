@@ -1,0 +1,129 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: rgb(246, 59, 59);
+}
+
+.contenedor{
+
+    height: 400px;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.izq{
+    float: left;
+}
+.der{
+    float: right;
+}
+.limpiar{
+    clear: both;
+}
+
+.fondo_negro{
+    background-color: black;
+    height: 140px;
+}
+header{
+    width: 80%;
+    margin-top: 5px;
+    color: white;
+    margin: 0 auto;
+    height: 50px;
+    
+}
+
+header nav{
+    padding-top: 10px;
+}
+
+header a img{
+    margin: 20px;
+
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.contenido{
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding: 20px;
+    border-radius: 1.5%;
+    margin-bottom: 20px;
+}
+
+.contenido ul li{
+    list-style: none;
+}
+
+.contenido a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenido section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contenido article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.botones{
+    background-color: black;
+}
+
+.botones a{
+    color: white;
+}
+.botones li{
+    border-radius: 1px;
+}  
+
+.margenes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 80%;
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
