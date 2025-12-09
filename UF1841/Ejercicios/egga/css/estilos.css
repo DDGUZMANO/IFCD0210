@@ -1,0 +1,112 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    font-size: 0.6em;
+    background-color: rgb(130, 212, 250)
+    
+}
+header h1{
+    padding: 1em;
+    color: white;
+    font-weight: lighter;
+}
+.centrado_nombre{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: rgb(130, 212, 250);
+    min-height: 11.5em;
+    border-radius: 0.2em;
+    box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.27);
+}
+.centrado{
+    width: 48%;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: rgb(130, 212, 250);
+    border-radius: 0.2em;
+    box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.27);
+
+}
+main h2{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.redondo{
+    border-radius: 50%;
+    padding: 1em;
+    
+}
+.izq{
+    float: left;
+}
+.der{
+    float: right;
+}
+.limpiar{
+    clear: both;
+}
+
+.centrado_nombre img{
+
+    border-radius: 50%;
+    margin: 1em;
+    box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.27);
+}
+
+.izq h2{
+    font-size: 4em;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.izq p{
+    padding: 0.5em;
+    font-size: 1.4em;
+    padding-top: 1.5em;
+
+}
+
+.icono{
+    width: 1.5em;
+    margin: 0.5em;
+    
+}
+
+.fondo_icono{
+    background-color: rgb(97, 158, 186);
+    width: 3em;
+    border-radius: 50%;
+    margin: 1em;
+    margin-top: 1em;
+}
+
+
+footer{
+    margin: 1em;
+    text-align: center;
+}
+
+footer li a{
+    text-decoration: none;
+    background-color: rgb(250, 250, 250);
+    
+}
+footer li{
+    display: inline-block;
+
+}
