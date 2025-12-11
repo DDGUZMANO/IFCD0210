@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Mono:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "fira mono";
+}
+
+header{
+    height: 10vh;
+    background-color: rgb(36, 37, 38);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500    ;
+}
+
+main{
+
+    background-color: rgb(42, 43, 46);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+.main-index{
+        height: 80vh;
+}
+
+.nombre{
+    font-size: 3.7em;
+}
+main a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+footer{
+    height: 10vh;
+    background-color: rgb(36, 37, 38);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+/* estilos del about */
+
+.cuerpo{
+    width: 55%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.negro{
+    background-color: rgb(36, 37, 38);
+    height: 15vh;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+.negro p{
+    margin-left: 1em;
+}
+
+.nombreAbout{
+    font-size: 2.5em;
+}
+
+.textos{
+    font-size: 1.2em;
+    margin-top: 1em;
+    line-height: 1.5em;
+    font-family: "fira mono";
+}
+.azul{
+    text-decoration: none;
+    color: rgb(78, 143, 222);
+}
+
+.espacio-izquierdo{
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
