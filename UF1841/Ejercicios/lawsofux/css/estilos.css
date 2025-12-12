@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    
+    font-family: "IBM Plex Sans" ;
+}
+body{
+    background-color: rgb(214, 214, 206);
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em 0 1em;
+}
+
+header ul{
+    margin: 0em 15em 0em 15em;
+}
+header a{
+    text-decoration: none;
+    color: rgb(26, 60, 77);    
+    font-size: 1em;
+}
+
+header li{
+        list-style: none;
+        display: inline-block;
+        margin: 1em;
+}
+header .logo{
+    width: 3em;
+}
+header img{
+    width: 1em;
+}
+
+main{
+    padding-top: 5em;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor h1{
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+.update{
+    margin-top: 3em;
+    width: 42em;
+    height: 6em;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(237, 237, 232);
+}
+
+.img-campana{
+    width: 0.8em;
+    /* background-color: rgb(237, 237, 232); */
+}
+
+.p-update{
+    /* background-color: rgb(237, 237, 232); */
+    font-size: 0.9em;
+}
