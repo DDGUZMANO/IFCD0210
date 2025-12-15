@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Inter";
+    width: 100%;
+    background-color: rgb(250, 216, 95);
+}
+
+/* estilos para header */
+.ancho-max{
+    
+    max-width: 80em;
+    margin: 0 auto;
+}
+header{
+    /* background-color: rgb(250, 216, 95); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .menu{
+    display: inline-block;
+}
+header .menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+header .contenedor-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(252, 239, 192);
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 40px;
+    
+}
+
+.logo{
+    width: 6em;
+}
+.boton-chrome{
+    background-color: rgb(232, 219, 174);
+    padding: 0.8em;
+    border-radius: 30px;
+}
+.chrome{
+    width: 1.3em;
+    padding-right: 0.5em;
+}
+
+.try-now{
+    background-color: rgb(250, 216, 95);
+    padding: 0.8em;
+    border-radius: 30px;
+}
+h1{
+    font-size: 3em;
+    max-width: 15em;
+    margin: 0 auto;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+}
+.subtitulo{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.planes{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 15em;
+    margin: 0 auto;
+    padding: 0.2em;
+    margin-top: 1em;
+    border-radius: 40px;
+}
+
+.yearly{
+    background-color: rgb(250, 216, 95);
+    padding: 0.5em;
+    margin: 0.3em;
+    border-radius: 30px;
+    font-weight: 600;
+    padding-top: 0.9em;
+}
+
+.porcentaje{
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    margin: 0.3em;
+    padding: 0.2em;
+}
+
+.monthly{
+    padding: 1.2em;
+    font-weight: 600;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: white;
+    border-radius: 10px;
+    width: 18em;
+}
+
+.plan-tarjeta{
+    background-color: rgb(237, 237, 237);
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.precio-anterior{
+    text-decoration: line-through;
+    color: rgb(101, 101, 102);
+    font-size: 2em;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.precio-actual{
+    font-size: 3em;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.frecuencia-pago{
+    font-size: 0.8em;
+    font-weight: 900;
+    color: rgb(101, 101, 102);
+}
+
+button{
+    background-color: rgb(250, 216, 95);
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.texto-tarjeta{
+    padding: 2em;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.texto-tarjeta ul{
+    list-style: none;
+}
+.texto-tarjeta li::before{
+    content: '✓';
+    margin-right: 0.5em;
+}
+.plan-essential{
+    color:rgb(250, 216, 95) ;
+    background-color: rgb(28, 91, 230);
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tarjeta a{
+    text-decoration: none;
+    color: rgb(28, 91, 230);
+}
