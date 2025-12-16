@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid</title>
     <style>
-        .contenedor{
+        .contenedor {
             display: grid;
-            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 200px 300px; */
+            grid-auto-columns: 30px;
+            /* grid-auto-columns: 30px; esto es para que las nuevas filas, ya tengan una altura predeterminada*/
             gap: 5px;
 
         }
-        .item{
-            height: 30px;
+
+        .item {
+
             background-color: aquamarine;
             border: 1px solid blue;
         }
+
+        .cabecera{
+            background-color: blanchedalmond;
+            /* grid-column-start:1 ;
+            grid-column-end: 4; */
+            grid-column: 1 / -1;
+        }
+        .segundo{
+            background-color: brown;
+            /* grid-row-start: 2;
+            grid-row-end: 5; */
+            grid-row: 2 / 4;
+        }
     </style>
 </head>
+
 <body>
     <div class="contenedor">
-        <div class="item">1</div>
-        <div class="item">2</div>
+        <div class="item cabecera">1</div>
+        <div class="item segundo">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
         <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <!-- <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21</div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24</div> -->
     </div>
 </body>
+
 </html>
