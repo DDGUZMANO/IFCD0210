@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 32px;
+}
+
+body{
+    font-family: "Inter";
+    /* box-sizing: border-box; */
+    background-color: rgb(242, 242, 245);
+}
+.ancho{
+    width: 30em;
+}
+
+h2{
+    width: 30rem;
+    margin: 1rem auto;
+    
+}
+.contenedor{
+    display: grid;
+    /* grid-template-columns: repeat(12,1fr); */
+    /* grid-template-rows: 4fr 3fr 3fr 2fr 2fr; */
+    gap: 10px;
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    grid-template-areas: 
+        "tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre"
+        "tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre"
+        "tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre"
+        "tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre tigre"
+        "cocodrilo cocodrilo cocodrilo cocodrilo cocodrilo cocodrilo loro loro loro loro loro loro"
+        "cocodrilo cocodrilo cocodrilo cocodrilo cocodrilo cocodrilo loro loro loro loro loro loro"
+        "cocodrilo cocodrilo cocodrilo cocodrilo cocodrilo cocodrilo loro loro loro loro loro loro"
+        "vaca vaca vaca vaca vaca vaca perro perro perro perro perro perro"
+        "vaca vaca vaca vaca vaca vaca perro perro perro perro perro perro"
+        "vaca vaca vaca vaca vaca vaca perro perro perro perro perro perro"
+        "elefante elefante elefante elefante estrella estrella estrella estrella caballo caballo caballo caballo"
+        "elefante elefante elefante elefante estrella estrella estrella estrella caballo caballo caballo caballo"
+        "zorro zorro zorro zorro serpiente serpiente serpiente serpiente cacatua cacatua cacatua cacatua"
+        "zorro zorro zorro zorro serpiente serpiente serpiente serpiente cacatua cacatua cacatua cacatua";
+}
+
+
+
+.contenedor img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+.tigre{
+    grid-area: tigre;
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.tigre p{
+    color: grey;
+}
+.texto-tigre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;    
+}
+.tarjeta p{
+    font-size: 0.7rem;
+    color: grey;
+}
+h1{
+    font-size: 1.3rem;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.tarjeta-chica{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.tarjeta div{
+    z-index: 1;
+}
+.tarjeta-chica div{
+    z-index: 1;
+}
+
+.tarjeta-chica p{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.tarjeta-chica h3{
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+
+}
+.cocodrilo{
+    grid-area: cocodrilo;
+}
+
+h3{
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.loro{
+   grid-area: loro;
+}
+
+.vaca{
+   grid-area: vaca;
+}
+
+.perro{
+    grid-area: perro;
+}
+
+.elefante{
+   grid-area: elefante;
+}
+
+.estrella{
+    grid-area: estrella;
+}
+
+.caballo{
+    grid-area: caballo;
+}
+
+.zorro{
+   grid-area: zorro;
+}
+
+.serpiente{
+    grid-area: serpiente;
+}
+
+.cacatua{
+    grid-area: cacatua;
+}
+
+.transform img{
+    transition: transform .3s
+    
+}
+.transform:hover img{
+    transform: scale(1.1);
+}
