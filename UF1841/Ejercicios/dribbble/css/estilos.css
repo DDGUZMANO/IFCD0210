@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+.ancho{
+    /* width: 90%; */
+    max-width: 40rem;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 30% 33% 37%;
+    gap: 0.5rem;
+    margin-top: 4%;
+    padding: 1rem;
+    padding-right: 1.9rem;
+    grid-template-areas: 
+    "better better manos"
+    "better better manos"
+    "better better manos"
+    "better better manos"
+    "team sync bring"
+    "team sync bring"
+    "team sync bring"
+    "team touch bring"
+    "mensajes touch bring"
+    "mensajes touch bring"
+    ;
+}
+.contenedor img{
+    height: 100%;
+    width: 100%;
+}
+
+.better{
+    grid-area: better;
+}
+.manos{
+    grid-area: manos;
+}
+.team{
+    grid-area: team;
+}
+.sync{
+    grid-area: sync;
+}
+.bring{
+    grid-area: bring;
+}
+.mensajes{
+    grid-area: mensajes;
+}
+.touch{
+    grid-area: touch;
+}
