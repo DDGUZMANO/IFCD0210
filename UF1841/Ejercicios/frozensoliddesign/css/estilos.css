@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos geerales */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Raleway";
+}
+
+header{
+    background-color: rgba(31, 31, 35, .95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.imagen-youtube{
+    width: 1.7rem;
+}
+
+header span,h1{
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-left: 1.6rem;
+    padding-right: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.padding-imagen-mensaje{
+    padding-right: 0.5rem;
+}
+/* Estilos del main */
+.contenedor-affordable{
+    padding-top: 6rem;
+    background-image: url(/imagenes/arcos.webp);
+    min-width: 100%;
+}
+
+.pluma{
+    color: rgb(66, 209, 235);
+    font-size: 7rem;
+}
+
+.titulo-affordable{
+    font-size: 7rem;
+}
+.subrayado-lila{
+    text-decoration: underline;
+    text-decoration-color: rgb(191, 65, 141);
+    text-decoration-thickness: 0.5rem;
+}
+.subrayado-celeste{
+    text-decoration: underline;
+    text-decoration-color: rgb(66, 209, 235);
+    text-decoration-thickness: 0.45rem;
+}
+.subrayado-verde{
+    text-decoration: underline;
+    text-decoration-color: rgb(102, 209, 104);
+    text-decoration-thickness: 0.45rem;   
+}
+
+.texto1-affordable{
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding-top: 4.7rem;
+}
+
+.texto2-affordable{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    border-bottom: 0.7rem solid black;
+    width: 100%;
+}
+
+.contenedor-websites{
+    background-color: rgb(66, 209, 235);
+
+}
+
+.imagen-wifi{
+    width: 6.5rem;
+    padding-left: 4rem;
+}
+.titulo-website{
+    font-size: 6.5rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.texto1-websites{
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+
+.texto2-websites{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    font-weight: 500;
+    padding-left: 4rem;
+    padding-bottom: 12rem;
+    border-bottom: 0.7rem solid black;
+}
+
+
+
+.imagen-laptop{
+    width: 8rem;
+    padding-left: 5rem;
+}
+
+.contenedor-custom-software{
+    background-image: url(/imagenes/lineas_diagonales.webp);
+}
+
+.titulo-custom-software{
+    font-size: 5rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.titulos-flex{
+    display: flex;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.contenedor-app{
+    background-image: url(/imagenes/fondo_oscuro.webp);
+}
+
+.titulo-app{
+    color: white;
+    font-size: 6rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.texto1-app{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+
+.texto2-app{
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    font-weight: 500;
+    padding-left: 4rem;
+    padding-right: 6rem;
+}
+
+.texto3-app{
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    font-weight: 500;
+    padding-left: 4rem;
+    padding-bottom: 12rem;
+}
+
+.contenedor-youtube{
+    background-color: #2a2a2e;
+}
+.titulo-youtube{
+    color: white;
+    font-size: 6rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.videos-youtube{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(27, 27, 31);
+    padding: 2rem;
+}
+.email-footer{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.youtube-footer{
+    width: 2.5rem;
+}
+
+.sobre-footer{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+/* clase de la flecha */
+
+.relativo{
+    background-color: beige;
+    position: relative;
+}
+.flecha-absoluto{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+}
+.relativo a{
+    color: black;
+}
