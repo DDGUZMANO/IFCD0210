@@ -54,11 +54,13 @@ header span,h1{
 
 .titulo-affordable{
     font-size: 7rem;
+    padding-left: 4rem;
 }
 .subrayado-lila{
     text-decoration: underline;
     text-decoration-color: rgb(191, 65, 141);
     text-decoration-thickness: 0.5rem;
+    
 }
 .subrayado-celeste{
     text-decoration: underline;
@@ -75,6 +77,7 @@ header span,h1{
     font-size: 3.2rem;
     font-weight: 700;
     padding-top: 4.7rem;
+    padding-left: 4rem;
 }
 
 .texto2-affordable{
@@ -84,6 +87,7 @@ header span,h1{
     padding-bottom: 6rem;
     border-bottom: 0.7rem solid black;
     width: 100%;
+    padding-left: 4rem;
 }
 
 .contenedor-websites{
