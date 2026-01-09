@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumar(a, b) {
+            let total = a + b;
+            return total;
+        }
+
+        let resultado = sumar(3, 2)
+
+        console.log(resultado)
+    </script>
+    <script>
+        function comparacion(a, b) {
+            if((typeof (a) == "number") && typeof (b) == "number"){
+                if (a > b) {
+                    console.log(a + " es mayor que " + b)
+                }
+                else if (b > a) {
+                    console.log(b + " es mayor que " + a)
+                }
+                else {
+                    console.log("Los números son iguales")
+                }
+            }
+            else{
+                console.log("Ambos valores deben ser numericos")
+            };
+        }
+
+        let resultado2 = comparacion(5, 2)
+    </script>
+</body>
+
+</html>

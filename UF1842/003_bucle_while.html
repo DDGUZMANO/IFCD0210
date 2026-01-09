@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let vueltas = 0
+        while(vueltas<20){
+            console.log("vuelta: " + vueltas);
+            vueltas+=1;
+
+        }
+    </script>
+
+    <script>
+        // bucle infinito
+
+        let contador = 0;
+
+        console.log("Antes del bucle");
+
+        while(true){
+            console.log("Contador: " + contador)
+            contador++;
+            if(contador == 7){
+                break;
+            };
+        };
+        console.log("Después del bucle");
+    </script>
+
+    <script>
+        let contadorInverso = 10;
+        console.log(contadorInverso);
+        while(contadorInverso>1){
+            contadorInverso--;
+            console.log(contadorInverso);
+        }
+        console.log("fin de bucle");
+    </script>
+
+    <script>
+        // ejemplo de continue
+
+        let ct = -1;
+        while(ct <= 20){
+            ct++;
+            if(ct % 2 == 1){
+                continue;
+            }
+            console.log("Numero par: " + ct);          
+        };
+    </script>
+    <script>
+        
+    </script>
+
+</body>
+</html>
