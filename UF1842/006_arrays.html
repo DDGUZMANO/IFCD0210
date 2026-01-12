@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // se puede definir el array de ambas formas
+        let vacio = [];
+        let func = new Array();
+        // se puede definir un array de ambas formas
+        let numero = [1,2,3,4];
+        let func2 = new Array(1,2,3,4);
+        
+        // Operador propagacion, spread
+        let prop = [...numero,1,34,777];
+        let palabra = "hola";
+        let prueba = [...palabra];
+
+        prop[0] = 0;
+
+        prop[100] = 9;
+
+        function toString(lista){ //devuelve un cadena con los elementos de caracteres
+            let palabra="";
+            for(let i = 0 ; i < lista.length ; i++){
+                palabra+=lista[i];
+            }
+            return palabra;
+        }
+
+        // crear una funcion que devuelva el valor minimo de un array numerico
+
+        function minimo(lista){
+            let valor_minimo = lista[0];
+            for(let i = 0; i <= lista.length; i++){
+                
+                if(lista[i]<valor_minimo){
+                    valor_minimo = lista[i];
+                }
+            }
+            return valor_minimo;
+        }
+
+        
+    </script>
+    <script>
+        /*
+        Crear un array con 5 valores numericos y comprobar si son todos positivos
+        y devolver el producto de todos los positivos
+        */
+
+        function producto(lista){
+            let numero = 1;
+            for(let i = 0; i < lista.length; i++ ){
+                if(lista[i]>0){
+                    numero *= lista[i]
+                }               
+            }
+            return numero;
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
