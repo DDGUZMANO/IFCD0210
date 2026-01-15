@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>
+            Lista de tareas
+        </h1>
+
+        <input type="text" name="" id="tarea" placeholder="Nombre de la tarea">
+        
+        <button onclick="agregarTarea()">Agregar tarea</button>
+
+        <ul id="padre">
+
+        </ul>
+
+    </div>
+    <script>
+        function agregarTarea(){
+            let cajaTexto = document.getElementById("tarea");
+            let texto = cajaTexto.value;
+            if(texto == ""){
+                return;
+            }
+            let li = document.createElement("li");
+            let check = document.createElement("input");
+            check.type = "checkbox";
+
+            let span = document.createElement("span");
+            span.innerHTML = texto;
+
+            let boton = document.createElement("button");
+            boton.innerHTML = "Eliminar";
+            boton.onclick = function(){
+                eliminarTarea(this);
+            }
+
+            li.appendChild(check);
+            li.appendChild(span);
+            li.appendChild(boton);
+
+            let lista = document.getElementById("padre");
+            lista.appendChild(li);
+            cajaTexto.value="";
+
+        }
+
+        function eliminarTarea(boton){
+            let li = boton.parentNode;
+            li.parentNode.removeChild(li);
+        }
+    </script>
+
+</body>
+
+</html>

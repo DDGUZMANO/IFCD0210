@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        contador = 1
+        function agregar(){
+            //let padre = document.getElementById("lista");
+            let padre = document.querySelector("#lista");
+            let li = document.createElement("li");
+            li.textContent = "Elemento nuevo" + " " + contador;
+            padre.appendChild(li);
+            contador++
+        }
+        function eliminar(){
+            // let eliminado = document.querySelector("#lista li");
+            // if (eliminado.length){
+            //     eliminado[eliminado.length-1].remove()
+            // }
+
+            let padre = document.getElementById("lista");
+            let li = padre.lastChild;
+            console.log(li);
+            if(li){
+                padre.removeChild(li);
+                padre.disabled = false;
+            }
+            else{
+                let desable = document.getElementById("eliminar")
+                desable.disabled = true;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>
+        Create element y Append child
+    </h1>
+    <button onclick="agregar()">
+        Agregar
+    </button>
+
+    <button id="eliminar" onclick="eliminar()">
+        Eliminar
+    </button>
+    <ul id="lista">
+
+    </ul>
+
+</body>
+</html>
