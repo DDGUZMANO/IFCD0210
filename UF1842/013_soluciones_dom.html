@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones de ejercicios DOM</title>
+    <style>
+        #ej1{
+            background-color: #a1b2c3;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Soluciones de ejercicios DOM
+    </h1>
+
+    <h2>Ejercicio 1</h2>
+
+    <button id="ej1" onclick="cambiaColor()">Haz click aqui</button>
+
+    <script>
+        let color1 = "red"
+        let color2 = "blue"
+
+        function cambiaColor(){
+            let btn = document.getElementById("ej1");
+            let colorActual = btn.style.backgroundColor;
+            if (colorActual == color1){
+                btn.style.backgroundColor=color2
+            }
+            else{
+                btn.style.backgroundColor=color1
+            }
+        }
+    </script>
+    <h2>Ejercicio 2</h2>
+    <p id="ej2" onmouseover="mostrarMensaje()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed alias repellat tempore 
+    </p>
+    <script>
+        function mostrarMensaje(){
+            let parrafo = document.getElementById("ej2");
+            if(parrafo.style.backgroundColor == "yellow"){
+                parrafo.style.backgroundColor="";
+            }
+            else{
+                parrafo.style.backgroundColor ="yellow";
+            }
+        }
+    </script>
+
+    <span id="parr2">Este párrafo funciona con addEventListener</span>
+    <script>
+        let mouse = document.getElementById("parr2");
+        // let amarillo = mouse.style.backgroundColor
+
+        mouse.addEventListener("mouseover",ponerAmarillo)
+        mouse.addEventListener("mouseleave",quitarAmarillo)
+
+        function ponerAmarillo(){
+            mouse.style.backgroundColor="yellow";
+        }
+        function quitarAmarillo(){
+            mouse.style.backgroundColor="";
+        }
+    </script>
+
+    <h2>Ejercicio 3</h2>
+
+    <input type="text" name="" id="ej3" placeholder="Las letras serán contadas">
+
+    <p>Pulsaciones: <span id="cantidadLetras"></span></p>
+
+    <script>
+        let campo = document.getElementById("ej3");
+        let texto = document.getElementById("cantidadLetras");
+        campo.addEventListener("keyup",teclaPresionada);
+        campo.addEventListener("focus",ponerBorde);
+        campo.addEventListener("blur",quitarBorde);
+        let contador=0;
+
+        function teclaPresionada(){
+            contador++;
+            texto.innerHTML = contador;
+        }
+
+        function ponerBorde(){
+            campo.style.border="5px solid blue";
+        }
+        function quitarBorde(){
+            campo.style.border="";
+        }
+    </script>
+
+    
+
+
+
+</body>
+</html>
