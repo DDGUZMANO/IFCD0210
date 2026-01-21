@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #scrollbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10px;
+            background-color: rgb(113, 102, 165);
+            width: 0;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        #scrollbar2{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10px;
+            background-color: rgb(235, 238, 238);
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .oscuro{
+            background-color: rgb(42, 41, 41);
+            color: whitesmoke;
+        }
+        .flechaa{
+            width: 50px;
+            height: 50px;
+            background-color: lightslategray;
+            color: whitesmoke;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            position: fixed;
+            right: 5px;
+            bottom: 50px;
+        }
+        .flechaa:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Barra de progreso con scroll</h2>
+    <button id="btn_tema">tema oscuro</button>
+    <div>
+        <textarea name="" id="cuadro" placeholder="Escriba aquí" maxlength="100"></textarea>
+        <p>Utilizados <span id="cuenta">0</span> de 100 caracteres</p>
+    </div>
+
+    <div id="scrollbar"></div>
+    <div id="scrollbar2"></div>
+    <div class="flechaa" onclick="window.scrollTo(0,0)">^</div>
+    <div style="height:1100px"></div>
+
+    <script>
+        window.addEventListener("scroll",function(){
+            let scrolled = window.scrollY;
+            let altura = document.body.scrollHeight - window.innerHeight;
+            let porcentaje = scrolled / altura;
+            document.getElementById("scrollbar").style.width = (porcentaje) * 100 + "%";
+            document.getElementById("scrollbar2").style.width = scrolled ? '100%' : '0';
+
+            //Mostrar flecha
+
+            let flecha = document.querySelector('.flechaa');
+            if(porcentaje > 0.3){
+                flecha.style.display="block";
+            }
+            else{
+                flecha.style.display="none";
+            }
+        });
+
+    </script>
+
+    <!----------------------------------------------------------------------->
+
+<script>
+    const boton = document.getElementById("btn_tema");
+    boton.addEventListener("click",function(){
+        document.body.classList.toggle("oscuro")
+        boton.textContent = document.body.classList.contains("oscuro")?"tema claro" : "tema oscuro";
+    })
+
+</script>
+
+<!-----------------------------------------Cuadro de texto----------------------------------------------->
+
+<script>
+    
+let cuadroTexto = document.getElementById("cuadro");
+let cuentaTexto = document.getElementById("cuenta");
+
+cuadroTexto.addEventListener('input',function(){
+    cuentaTexto.innerHTML = cuadroTexto.value.length;
+})
+
+
+
+
+</script>
+</body>
+</html>
